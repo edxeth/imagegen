@@ -6,6 +6,12 @@ Use it when you want a real bitmap image: a hero image, product shot, mockup, te
 
 The skill keeps the everyday instructions short. The longer notes live in `references/` so the agent only reads them when something actually needs them.
 
+## Install
+
+```bash
+npx skills add edxeth/imagegen
+```
+
 ## Setup
 
 Add this to your shell config, for example `~/.zshrc`:
