@@ -26,7 +26,7 @@ export PI_IMAGEGEN_OUTPUT_DIR="$HOME/.pi/generated_images"
 Then reload your shell:
 
 ```bash
-source ~/.bashrc
+source ~/.zshrc
 ```
 
 ## Quick start
