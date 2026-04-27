@@ -8,6 +8,14 @@ The skill keeps the everyday instructions short. The longer notes live in `refer
 
 ## Install
 
+This skill requires the `pi-better-skills` extension for compatibility:
+
+```bash
+pi install git:https://github.com/edxeth/pi-better-skills
+```
+
+Then install the skill:
+
 ```bash
 npx skills add edxeth/imagegen
 ```
