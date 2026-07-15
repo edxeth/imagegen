@@ -20,6 +20,18 @@ Then install the skill:
 npx skills add edxeth/imagegen
 ```
 
+To repair or upgrade an existing Pi installation non-interactively:
+
+```bash
+npx skills add edxeth/imagegen \
+  --skill imagegen \
+  --agent pi \
+  --global \
+  --yes
+```
+
+The repository keeps `SKILL.md`, `scripts/`, and `references/` together under `imagegen/`. This ensures the skills CLI installs the complete bundle rather than only `SKILL.md`.
+
 ## Setup
 
 Add this to your shell config, for example `~/.zshrc`:
@@ -39,15 +51,17 @@ source ~/.zshrc
 
 ## Quick start
 
+From the repository root:
+
 ```bash
-python scripts/image_gen.py generate \
+python imagegen/scripts/image_gen.py generate \
   --prompt "A tiny red cube on a plain white background, no text"
 ```
 
 Save into a project:
 
 ```bash
-python scripts/image_gen.py generate \
+python imagegen/scripts/image_gen.py generate \
   --prompt "A clean product photo of a matte ceramic coffee mug, no text" \
   --out public/images/mug-hero.png
 ```
@@ -55,7 +69,9 @@ python scripts/image_gen.py generate \
 Edit an image:
 
 ```bash
-python scripts/image_gen.py edit \
+python imagegen/scripts/image_gen.py edit \
   --image input.png \
   --prompt "Replace only the background with warm sunset light; keep the subject unchanged"
 ```
+
+From an installed skill directory, the equivalent path remains `scripts/image_gen.py`.
